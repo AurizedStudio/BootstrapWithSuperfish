@@ -1,1 +1,4 @@
-// コメント
+// ナビゲーション
+$(function(){
+    $(".sf-menu").superfish();
+});

@@ -23,6 +23,7 @@ var path = {
     srcSvg: './source/svg/',
     dest: './htdocs/',
     destCss: './htdocs/css/',
+    destJs: './htdocs/js/',
     destImg: './htdocs/img/',
     destFont: './htdocs/fonts/'
 //    scripts: ['client/js/**/*.coffee', '!client/external/**/*.coffee'],
@@ -93,7 +94,7 @@ gulp.task('sass', function() {
 // 監視
 gulp.task('watch', ['server'], function() {
     gulp.watch(
-        [path.srcScss + '**/*.scss', path.dest + '*.html'],
+        [path.srcScss + '**/*.scss', path.dest + '*.html', path.destJs + '*.js'],
         ['sass', browserSync.reload]
     );
 });

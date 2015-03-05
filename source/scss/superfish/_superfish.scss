@@ -44,33 +44,24 @@
 }
 .sf-menu a {
 	border-left: 1px solid #fff;
-	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
-	border-top: 1px solid rgba(255,255,255,.5);
+	border-top: 1px solid #fff; /* fallback colour must use full shorthand */
 	padding: .75em 1em;
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
-	color: #13a;
+	color: #fff;
 }
 .sf-menu li {
-	background: #BDD2FF;
+	background-color: $brand-primary;
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
-	-webkit-transition: background .2s;
 	transition: background .2s;
-}
-.sf-menu ul li {
-	background: #AABDE6;
-}
-.sf-menu ul ul li {
-	background: #9AAEDB;
 }
 .sf-menu li:hover,
 .sf-menu li.sfHover {
-	background: #CFDEFF;
+	background-color: lighten($brand-primary,10%);
 	/* only transition out, not in */
-	-webkit-transition: none;
 	transition: none;
 }
 
