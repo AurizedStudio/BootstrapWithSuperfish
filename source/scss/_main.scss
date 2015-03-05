@@ -4,7 +4,7 @@
 .gnav {
     @include clearfix;
 }
-.sf-menu { // Desktop first for IE8 
+.sf-menu { // Desktop first for IE8. If using collapse menu, you can do mobile first, then install respond.js for IE8 
     width: auto;
     ul {
         li {

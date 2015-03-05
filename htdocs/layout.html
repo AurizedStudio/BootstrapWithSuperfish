@@ -27,6 +27,7 @@
 <!--[if lt IE 9]>
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script>window.html5 || document.write('<script src="js/html5shiv.min.js"><\/script>')</script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -38,48 +39,60 @@
 <header>
     <h1>Bootstrap with Superfish dropdown menu</h1>
 </header>
-<nav class="gnav">
-    <ul class="sf-menu">
-        <li><a href="about.html">会社概要</a>
-            <ul>
-                <li><a href="philosophy.html">企業理念</a></li>
-                <li><a href="#">沿革</a></li>
-                <li><a href="#">支社・営業所一覧</a></li>
-                <li><a href="#">電子公告</a>
-                    <ul>
-                        <li><a href="#">2015年度</a></li>
-                        <li><a href="#">2014年度</a></li>
-                        <li><a href="#">2013年度</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">環境活動</a></li>
-            </ul>
-        </li>
-        <li><a href="#">社長メッセージ</a></li>
-        <li><a href="#">お知らせ</a>
-            <ul>
-                <li><a href="#">2014年度</a></li>
-                <li><a href="#">2013年度</a></li>
-                <li><a href="#">2012年度</a></li>
-            </ul>
-        </li>
-        <li><a href="#">セミナー情報</a></li>
-        <li><a href="#">事業内容</a>
-            <ul>
-                <li><a href="#">デザインソリューション</a></li>
-                <li><a href="#">Webソリューション</a></li>
-                <li><a href="#">スマートデバイスソリューション</a></li>
-                <li><a href="#">動画コンテンツソリューション</a></li>
-                <li><a href="#">業務システム定着化研修ソリューション</a>
-                    <ul>
-                        <li><a href="#">業務システムマニュアル作成ソリューション</a></li>
-                        <li><a href="#">業務システムeラーニングソリューション</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><a href="#">採用情報</a></li>
-    </ul>
+<nav class="navbar navbar-default">
+    <!-- toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-fish">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- Collect the nav links, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-fish">
+        <ul class="sf-menu">
+            <li><a href="about.html">会社概要</a>
+                <ul>
+                    <li><a href="philosophy.html">企業理念</a></li>
+                    <li><a href="#">沿革</a></li>
+                    <li><a href="#">支社・営業所一覧</a></li>
+                    <li><a href="#">電子公告</a>
+                        <ul>
+                            <li><a href="#">2015年度</a></li>
+                            <li><a href="#">2014年度</a></li>
+                            <li><a href="#">2013年度</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">環境活動</a></li>
+                </ul>
+            </li>
+            <li><a href="#">社長メッセージ</a></li>
+            <li><a href="#">お知らせ</a>
+                <ul>
+                    <li><a href="#">2014年度</a></li>
+                    <li><a href="#">2013年度</a></li>
+                    <li><a href="#">2012年度</a></li>
+                </ul>
+            </li>
+            <li><a href="#">セミナー情報</a></li>
+            <li><a href="#">事業内容</a>
+                <ul>
+                    <li><a href="#">デザインソリューション</a></li>
+                    <li><a href="#">Webソリューション</a></li>
+                    <li><a href="#">スマートデバイスソリューション</a></li>
+                    <li><a href="#">動画コンテンツソリューション</a></li>
+                    <li><a href="#">業務システム定着化研修ソリューション</a>
+                        <ul>
+                            <li><a href="#">業務システムマニュアル作成ソリューション</a></li>
+                            <li><a href="#">業務システムeラーニングソリューション</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">採用情報</a></li>
+        </ul>
+    </div>
 </nav>
 <div id="main" class="main">
     <p>Main Content</p>
@@ -96,6 +109,8 @@
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="js/hoverIntent.js"></script>
 <script src="js/superfish.min.js"></script>
+<script src="js/collapse.js"></script>
+<script src="js/transition.js"></script>
 <script src="js/style-top.js"></script>
 </body>
 </html>
