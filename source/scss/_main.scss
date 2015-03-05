@@ -8,7 +8,8 @@
 .ci {
     margin: 0;
 }
-.sf-menu { // Desktop first for IE8. If using collapse menu, you can do mobile first, then install respond.js for IE8
+// Desktop first for IE8. If using collapse menu, you can do mobile first, then install respond.js for IE8
+.sf-menu { // <u> Top
     float: right;
     width: auto;
     ul {
@@ -20,9 +21,17 @@
         float: left;
         width: auto;
     }
+    .sf-menu-left { // <ul> 2nd
+        left: auto;
+        right: 0;
+        ul {
+            left: auto;
+            right: 100%;
+        }
+    }
 }
 @media (max-width: $screen-md-min) {
-    .sf-menu {
+    .sf-menu { // <u> Top
         float: left;
     }
 }
