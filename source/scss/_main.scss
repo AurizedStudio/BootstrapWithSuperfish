@@ -4,6 +4,40 @@
 .gnav {
     @include clearfix;
 }
+.sf-menu { // Desktop first for IE8 
+    width: auto;
+    ul {
+        li {
+            background-color: $brand-primary;
+        }
+    }
+    > li {
+        float: left;
+        width: auto;
+    }
+}
+@media (max-width: $screen-sm-min) {
+    .sf-menu { // <ul> Top
+        width: 100%;
+        ul {
+            position: static;
+            li {
+                background-color: darken($brand-primary,10%);
+                li a {
+                    padding: .75em 1em .75em 2em;
+                }
+            }
+        }
+        li {
+            white-space: normal;
+        }
+        > li {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
 // google font
 // @import url(http://fonts.googleapis.com/css?family=Bitter);
 
