@@ -1,10 +1,15 @@
+.wrap {
+    padding: 20px 0;
+}
 /**
  *  ナビゲーション
  */
-.gnav {
-    @include clearfix;
+// ブランドロゴ
+.ci {
+    margin: 0;
 }
-.sf-menu { // Desktop first for IE8. If using collapse menu, you can do mobile first, then install respond.js for IE8 
+.sf-menu { // Desktop first for IE8. If using collapse menu, you can do mobile first, then install respond.js for IE8
+    float: right;
     width: auto;
     ul {
         li {
@@ -16,8 +21,14 @@
         width: auto;
     }
 }
+@media (max-width: $screen-md-min) {
+    .sf-menu {
+        float: left;
+    }
+}
 @media (max-width: $screen-sm-min) {
     .sf-menu { // <ul> Top
+        float: none;
         width: 100%;
         ul {
             position: static;
